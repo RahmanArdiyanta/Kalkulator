@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kalkulator</title>
+    <style type="text/css">
+body {
+    background-image:url(https://149522020.v2.pressablecdn.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flexbox;
+    background-color: none;
+    margin-top: 150px;
+    margin-left: 350px;
+    margin-right: 150px;
+    width: 800px;
+    height: 400px;
+    padding-bottom: 50px;
+    padding-top: 3px;
+    padding-left: 15px;
+}
+
+.container .text {
+    text-align: center;
+    border: 5px solid white;
+    box-shadow: 5px 5px;
+    margin-top: 10px;
+    width: 400px;
+    color: white;
+}
+
+.container .text h1 {
+    margin-left: 20px
+}
+
+.box-one {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box-one label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.box-one input {
+    background-color: white;
+    width: 750px;
+    height: 45px;
+    margin-top: 10px;
+    border: hidden;
+    box-shadow: 2px 2px 2px;
+    font-size: 20px;
+    text-indent: 7px;
+    border-radius: 50px;
+
+}
+
+.box-two {
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.box-two label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-two input {
+    background-color: white;
+    width: 750px;
+    height: 45px;
+    margin-top: 10px;
+    border: hidden;
+    box-shadow: 2px 2px 2px;
+    font-size: 20px;
+    text-indent: 7px;
+    border-radius: 50px;
+}
+
+button {
+    display: flexbox;
+    margin-top: 20px;
+    margin-left: 43px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    background-color: black;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 45px;
+    color: white;
+}
+
+button:hover {
+    background-color: red;
+    transition: all .5s ease-in-out;
+
+}
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div class="container">
+            <div class="text">
+                <h1>Kalkulator</h1>
+            </div>
+            <br>
+            <div class="box-one">
+                <label for="number">Bilangan 1 :</label><br>
+                <input type="text" id="a" name="number"><br>
+            </div>
+            <div class="box-two">
+                <label for="number">Bilangan 2 :</label><br>
+                <input type="text" id="b" name="number"><br>
+            </div>
+            <button type="button" id="plus">+</button>
+            <button type="button" id="minus">-</button>
+            <button type="button" id="bagi">:</button>
+            <button type="button" id="kali">*</button>
+            <button type="reset" id="reset" onclick="fun()">C</button>
+        </div>
+    </form>
+    
+    <script src="inistyle-script.js"></script>
+</body>
+</html>
